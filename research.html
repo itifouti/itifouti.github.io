@@ -17,40 +17,32 @@
 </nav>
 
 <p>
-My research focuses on the development, analysis, and implementation of nonlinear adaptive model order reduction techniques for parameterized partial differential equations.
+My research focuses on the development, analysis, and implementation of nonlinear adaptive model order reduction methods for parameterized partial differential equations, with applications to compressible flows and harmonic wave inversion.
 </p>
 
-<h2>Projection-based nonlinear model reduction</h2>
+<h2>projection-based nonlinear model reduction</h2>
 <p>
-I develop intrusive projection-based reduced-order models for nonlinear parameterized PDEs. 
-My work includes registration-based approaches that introduce spatio-parameter adaptivity in order to capture localized structures and transport-dominated phenomena. 
-These methods are designed for problems where classical linear reduction techniques fail due to strong nonlinearities and moving features.
+I develop intrusive projection-based reduced-order models for nonlinear parameterized PDEs. A core direction of my work is registration-based reduction with spatio-parameter adaptivity, designed to handle advection-dominated regimes and moving features. The objective is to build reduced spaces that remain accurate under strong nonlinearities and parametric variability.
 </p>
 
-<h2>Mesh adaptation based on error estimates</h2>
+<h2>mesh adaptation based on error estimates</h2>
 <p>
-I develop metric-based mesh adaptation strategies driven by error models. 
-In particular, I construct anisotropic error indicators and use them to define mesh metrics that guide local refinement and coarsening. 
-The objective is to control the discretization error efficiently in advection-dominated and hyperbolic regimes, while coupling mesh adaptation with reduced-order modeling techniques.
+I develop metric-based anisotropic mesh adaptation strategies driven by error models. In practice, I construct error indicators (feature-based, residual-based, or goal-oriented) and translate them into mesh metrics that guide refinement and coarsening under a fixed complexity budget. This provides controlled discretization error while concentrating degrees of freedom only where they are needed.
 </p>
 
-<h2>Error estimation and adjoint-based methods</h2>
+<h2>error estimation and adjoint-based methods</h2>
 <p>
-I work on goal-oriented error estimation using adjoint-based techniques. 
-This includes the derivation and implementation of dual-weighted residual methods and the construction of reliable output error indicators. 
-These tools are used both to assess the accuracy of reduced models and to drive adaptive strategies in space and parameter.
+I work on error estimation methods, with an emphasis on adjoint-based and goal-oriented techniques. This includes dual-weighted residual formulations used to estimate errors in quantities of interest, assess reduced-order accuracy, and drive adaptive enrichment and discretization strategies.
 </p>
 
-<h2>Inverse problems and harmonic full-wave inversion</h2>
+<h2>reduced modeling for harmonic wave inversion</h2>
 <p>
-I investigate the use of reduced-order models for inverse problems, in particular harmonic full-wave inversion in wave propagation settings. 
-In this context, reduced modeling is used to accelerate repeated forward and adjoint simulations required by optimization-based inversion procedures.
+My current research investigates reduced-order modeling for inverse problems in the frequency domain, in particular harmonic full-wave inversion. The goal is to accelerate repeated forward and adjoint solves required by optimization-based inversion, while maintaining accuracy through error-aware reduced models and adaptive strategies.
 </p>
 
-<h2>System identification and non-intrusive methods</h2>
+<h2>system identification and non-intrusive methods</h2>
 <p>
-During my master's thesis at Sorbonne Université, I developed non-intrusive nonlinear model reduction techniques for unsteady coupled fluid–structure interaction problems. 
-This work focused on data-driven approaches and system identification strategies for complex multiphysics systems.
+During my master’s thesis at Sorbonne Université, I studied non-intrusive nonlinear model reduction for unsteady coupled PDEs arising in fluid–structure interaction. This work focused on data-driven dynamical modeling and system identification methods that reconstruct evolution operators from observable outputs.
 </p>
 
 </body>
