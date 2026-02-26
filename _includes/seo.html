@@ -1,1 +1,9 @@
 
+{% comment %}Override title for homepage only{% endcomment %}
+{% if page.url == "/" %}
+  {% assign seo_title = page.title | default: site.title %}
+{% else %}
+  {% if page.title %}
+    {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+  {% endif %}
+{% endif %}
